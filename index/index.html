@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      #navbar{display:flex;
+        background-color: rgb(74, 219, 219);
+      justify-content: space-around;}
+#user-form{ display:flex;
+  margin-top: 20px;
+  flex-direction: column;
+  background-color: bisque;
+align-items: center;}
+#user_country{padding:6px;}
+      
+    </style>
+  </head>
+  <body>
+     <div id="navbar">
+      <!-- <h3>News App</h3>
+      <h3>Sign-Up</h3>
+      <h3>
+        <a href="/worldNews.html">World News</a>
+      </h3> -->
+    </div> 
+    <div id="user-form">
+      <input type="url" id="user_pic"/>
+      <input type="text" id="user_name"/>
+      <input type="text" id="user_email"/>
+
+      <select id="user_country">
+        <option value="">Select country</option>
+        <option value="in">India</option>
+        <option value="ch">China</option>
+        <option value=" nz">Newzeland</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option>
+
+      </select>
+    
+      <input type ="submit" id="submit"/>
+
+
+    </div>
+  </body>
+</html>
+<script type="module">   
+import {navbar} from "../scripts/index.js"
+console.log(navbar)
+document.getElementById("navbar").innerHTML=navbar()
+</script>
